@@ -122,7 +122,10 @@ function get_login_form() {
         <div class="clearfix">            
           <label for="domain">Domain</label>
           <div class="input">
-            <input id="domain" name="domain" size="30" type="text">
+            <div class="input-append">
+              <input id="domain" name="domain" type="text">
+              <label class="add-on">.codebasehq.com</label>
+            </div>
           </div> 
         </div><!-- /clearfix -->
         
@@ -137,6 +140,7 @@ function get_login_form() {
           <label for="api_key">API Key</label>
           <div class="input">
             <input class="xlarge" id="api_key" name="api_key" size="30" type="password">
+            <span class="help-block">something like "y39q6y6y9c0s722nx5tp5v7dxz3xyywywtg60lx0"</span>
           </div> 
         </div><!-- /clearfix -->
         
@@ -195,4 +199,10 @@ function csv_to_array($filename, $separator = ",") {
   }
 
   return $array;
+}
+
+
+function set_message($message, $type = "warning") {
+  session_start();
+  $_SESSION["messages"][] = array("message" => $message, "type" => $type);
 }

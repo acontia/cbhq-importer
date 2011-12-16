@@ -16,10 +16,11 @@
             <h3><a href="http://www.cameronandwilding.com">CBHQ importer</a></h3>
             <ul class="nav">
               <li><a href="index.php">Home</a></li>
+              <li><a href="index.php?page=import-tickets">Import tickets</a></li>
+              <li><a href="index.php?page=time-tracking">Time tracking</a></li>
             </ul>
             <ul class="nav secondary-nav">
               <li><?php
-                session_start();
                 if(!empty($_SESSION["user"])) {
                   print (get_logout_form());
                 }
@@ -30,10 +31,11 @@
       </div>
       
     </div>
+    
   
     <div class="container-fluid">    
     
-      <p><?php print ($content); ?></p>
+      <?php print ($content); ?>
       
       <div>
       

@@ -22,7 +22,6 @@ class CBHQ {
     
     //doesn't exist a function to check login details, so use this one
     $result = $this->request($user, "projects", "GET");
-    
     if($result == FALSE) {
       return FALSE;
     }
@@ -64,6 +63,17 @@ class CBHQ {
     return $result;
   }
   
+  public function get_ticket_types() {
+    $ticket_types[0]['id'] = 'bug';
+    $ticket_types[0]['name'] = 'Bug';    
+    $ticket_types[1]['id'] = 'enhancement';
+    $ticket_types[1]['name'] = 'Enhancement';    
+    $ticket_types[2]['id'] = 'task';
+    $ticket_types[2]['name'] = 'Task';
+    
+    return $ticket_types;
+  }
+  
   /**
    * Inserts a new ticket
    * 
@@ -89,7 +99,7 @@ class CBHQ {
       
       $ticket_id = $result["ticket"][0];
       
-      //@todo: Separate to another funcion ->insert_ticket_note
+      //TODO: Separate to another funcion ->insert_ticket_note
       
       //Create note
       $note_xml = '<ticket-note>';

@@ -1,5 +1,5 @@
 "summary","status","reporter","assignee","priority","ticket-type","milestone","estimated-time","body"
-"my test task 1","New",4566,5654,"Normal","Task","November work",123,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat "
-"my test task 2","New",4566,"Neil Cameron","High","Task","October work",163,
-"my test task 3","New","Pablo Castrillo",5654,"Normal","Bug",24342,133,"Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum "
-"my test task 4","New",4566,5654,"Low","Task","Existing bugs",122,
+"my test task 1","New",4566,5654,"Normal","Task","design",123,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat "
+"my test task 2","New",4566,"Neil Cameron","High","Task","design",163,
+"my test task 3","New","Pablo Castrillo",5654,"Normal","Bug","testing",133,"Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum "
+"my test task 4","New",4566,5654,"Low","Task","design",122,
